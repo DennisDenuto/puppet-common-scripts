@@ -16,6 +16,7 @@ Now we're ready to make it our own!
 ```
 script/cibuild
 .bundle/binstubs/rspec-puppet-init
+refresh_specs.sh
 ```
 
 Now you'll need to edit `manifests/init.pp` and `spec/classes/template_spec.rb`
