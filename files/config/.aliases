@@ -1,0 +1,7 @@
+#!/bin/bash
+
+alias grep='grep --color=auto'
+alias l='ls -ltra'
+alias mci='mvn clean install'
+alias mcis='mvn clean install -DskipTests'
+alias mjr='mvn jetty:run'

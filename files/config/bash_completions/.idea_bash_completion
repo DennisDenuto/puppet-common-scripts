@@ -1,0 +1,15 @@
+_idea() 
+{
+    local cur prev opts
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
+    opts="$(find ~/app/projects/ -name "${cur}*" -type d -maxdepth 1 | sed 's/.*\///g')"
+#echo $opts
+
+    COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+    #return 0
+}
+
+#complete -F _p p
+complete -o default -F _idea -o nospace idea
