@@ -5,4 +5,7 @@ file { "/Users/$username/config":
     source  => "puppet:///modules/common-scripts/config",
     recurse => true,
     }
+file { "/Users/$username/.gitconfig":
+    source  => "puppet:///modules/common-scripts/git/.gitconfig",
+    }
 }

@@ -1,0 +1,28 @@
+[user]
+	name = Dennis Leon
+	email = dennis.leon39@gmail.com
+[core]
+	autocrlf = input
+ excludesfile = /opt/boxen/config/git/gitignore
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+	ui = auto
+[alias]
+	ci = commit
+	st = status
+	lg-local-commits = log --graph --decorate --pretty=oneline --abbrev-commit --all origin/master..HEAD
+	lg = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	g = grep --break --heading --line-number
+[grep]
+	extendRegexp = true
+	lineNumber = true
+[push]
+	default = matching
+
+[hub]
+protocol = https
+
+[credential]
+helper = /opt/boxen/bin/boxen-git-credential
