@@ -1,10 +1,7 @@
 
 # envs
-export MY_PROJECTS_HOME=
+export CODE_DIR=
 export PATH=$PATH:$MY_PROJECTS_HOME
 
 # sourcing config
-source .aliases
-source .bash_scripts
-source .color_config
-source bash_completions/*
+source ~/config/.aliases
