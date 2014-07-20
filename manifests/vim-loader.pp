@@ -9,7 +9,7 @@
 #   vim::vim-loader
 
 class common-scripts::vim-loader {
-  require vim
+  require common-scripts::vim
 
   # Install pathogen into .vimrc
   file_line { 'load_pathogen':

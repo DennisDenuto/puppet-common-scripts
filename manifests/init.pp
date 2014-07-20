@@ -1,7 +1,7 @@
 # This is a placeholder class.
 #class bash_config_scripts($username) {
 class common-scripts($username="") {
-include vim
+include common-scripts::vim
 
 file { "/Users/$username/config":
     source  => "puppet:///modules/common-scripts/config",
