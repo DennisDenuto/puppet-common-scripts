@@ -1,4 +1,4 @@
-nstalls vim and vim-pathogen
+# Installs vim and vim-pathogen
 
 # Examples
 #
