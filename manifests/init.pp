@@ -47,25 +47,9 @@ file { "/Users/$username/.oh-my-zsh/custom/plugins":
     source  => "altercation/vim-colors-solarized",
   }
 
-  file { "${vimrc}": ensure => present }
+  file { "${vimrc}": 
+     ensure  => present,
+     source  => "puppet:///modules/common-scripts/vim/.vimrc",
+  }
 
-  # Install pathogen into .vimrc
-  file_line { 'load_pathogen':
-    ensure  => present,
-    line    => 'execute pathogen#infect()',
-    path    => $vimrc,
-    require => File[$vimrc]
-  }
-  file_line { 'syntax_on':
-    ensure  => present,
-    line    => 'syntax on',
-    path    => $vimrc,
-    require => File[$vimrc]
-  }
-  file_line { 'filetype_plugin_indent_on':
-    ensure  => present,
-    line    => 'filetype plugin indent on',
-    path    => $vimrc,
-    require => File[$vimrc]
-  }
 }
