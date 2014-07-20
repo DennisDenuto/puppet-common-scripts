@@ -8,14 +8,14 @@
 #   include vim
 #   vim::vim-loader
 
-class common-scripts::vim-loader {
+class common-scripts::vimloader {
   require common-scripts::vim
 
   # Install pathogen into .vimrc
   file_line { 'load_pathogen':
     ensure  => present,
     line    => 'execute pathogen#infect()',
-    path    => $common-scripts::vim::vimrc,
-    require => File[$common-scripts::vim::vimrc]
+    path    => $::vimrc,
+    require => File[$::vimrc]
   }
 }
