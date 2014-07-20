@@ -43,8 +43,8 @@ file { "/Users/$username/.oh-my-zsh/custom/plugins":
     ]
   }
 
-  repository { "/Users/${::boxen_user}/.vim/bundle/vimcolorssolarized":
-    source  => "altercation/vimcolorssolarized",
+  repository { "/Users/${::boxen_user}/.vim/bundle/vim-colors-solarized":
+    source  => "altercation/vim-colors-solarized",
   }
 
   file { "${vimrc}": ensure => exists }
