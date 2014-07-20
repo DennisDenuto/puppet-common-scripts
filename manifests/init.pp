@@ -51,7 +51,7 @@ file { "/Users/$username/.oh-my-zsh/custom/plugins":
   file_line { 'load_pathogen':
     ensure  => present,
     line    => 'execute pathogen#infect()',
-    path    => $::vimrc,
-    require => File[$::vimrc]
+    path    => $vimrc,
+    require => File[$vimrc]
   }
 }
