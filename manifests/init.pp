@@ -47,6 +47,8 @@ file { "/Users/$username/.oh-my-zsh/custom/plugins":
     source  => "altercation/vimcolorssolarized",
   }
 
+  file { "${vimrc}": ensure => exists }
+
   # Install pathogen into .vimrc
   file_line { 'load_pathogen':
     ensure  => present,
