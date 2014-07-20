@@ -56,4 +56,16 @@ file { "/Users/$username/.oh-my-zsh/custom/plugins":
     path    => $vimrc,
     require => File[$vimrc]
   }
+  file_line { 'syntax_on':
+    ensure  => present,
+    line    => 'syntax on',
+    path    => $vimrc,
+    require => File[$vimrc]
+  }
+  file_line { 'filetype_plugin_indent_on':
+    ensure  => present,
+    line    => 'filetype plugin indent on',
+    path    => $vimrc,
+    require => File[$vimrc]
+  }
 }
