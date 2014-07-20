@@ -8,7 +8,7 @@
 #     source => 'scrooloose/syntastic',
 #   }
 #
-class vim {
+class common-scripts::vim {
   $home = "/Users/${::boxen_user}"
   $vimrc = "${home}/.vimrc"
   $vimdir = "${home}/.vim"

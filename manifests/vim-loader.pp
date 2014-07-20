@@ -8,7 +8,7 @@
 #   include vim
 #   vim::vim-loader
 
-class vim::vim-loader {
+class common-scripts::vim-loader {
   require vim
 
   # Install pathogen into .vimrc
