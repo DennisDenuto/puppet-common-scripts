@@ -3,5 +3,8 @@
 export CODE_DIR=
 export PATH=$PATH:$MY_PROJECTS_HOME
 
+# add aws-cli to path
+export PATH=$PATH:~/.ec2_cli/eb/macosx/python3/
+
 # sourcing config
 source ~/config/.aliases
