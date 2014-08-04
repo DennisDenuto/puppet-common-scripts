@@ -52,4 +52,11 @@ file { "/Users/$username/.oh-my-zsh/custom/plugins":
      source  => "puppet:///modules/common-scripts/vim/.vimrc",
   }
 
+  # aws cli
+  file { "/Users/$username/.ec2_cli":
+    source  => "puppet:///modules/common-scripts/aws_cli/AWS-ElasticBeanstalk-CLI-2.6.3",
+    ensure  => directory,
+    recurse => true,
+  }
+
 }
