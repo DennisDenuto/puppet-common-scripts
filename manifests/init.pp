@@ -47,6 +47,10 @@ file { "/Users/$username/.oh-my-zsh/custom/plugins":
     source  => "altercation/vim-colors-solarized",
   }
 
+  repository { "/Users/${::boxen_user}/.vim/bundle/vim-java-decompiler-using-jad":
+    source  => "vim-scripts/JavaDecompiler.vim",
+  }
+
   file { "${vimrc}": 
      ensure  => present,
      source  => "puppet:///modules/common-scripts/vim/.vimrc",
