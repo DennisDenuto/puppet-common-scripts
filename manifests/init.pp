@@ -51,6 +51,9 @@ file { "/Users/$username/.oh-my-zsh/custom/plugins":
     source  => "rodjek/vim-puppet",
   }
 
+  repository { "/Users/${::boxen_user}/.vim/bundle/vim-json":
+    source  => "elzr/vim-json",
+  }
   repository { "/Users/${::boxen_user}/.vim/bundle/vim-java-decompiler-using-jad":
     source  => "vim-scripts/JavaDecompiler.vim",
   }
