@@ -63,6 +63,10 @@ file { "/Users/$username/.oh-my-zsh/custom/plugins":
     source  => "kien/ctrlp.vim",
   }
 
+  repository { "/Users/${::boxen_user}/.vim/bundle/vim-xml":
+    source  => "othree/xml.vim",
+  }
+
   repository { "/Users/${::boxen_user}/.vim/bundle/vim-java-decompiler-using-jad":
     source  => "vim-scripts/JavaDecompiler.vim",
   }
