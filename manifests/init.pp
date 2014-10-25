@@ -79,4 +79,10 @@ file { "/Users/$username/.oh-my-zsh/custom/plugins":
     recurse => true,
   }
 
+  # useful scripts
+  file { "/usr/local/bin":
+    source  => "puppet:///modules/common-scripts/useful_scripts",
+    ensure  => directory,
+    recurse => true,
+  }
 }

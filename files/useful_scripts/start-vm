@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [[ $# != 1 ]]; then
+    echo "usage: [vmx path]"
+    exit 1
+fi
+
+"/Applications/VMware Fusion.app/Contents/Library/vmrun" -T fusion start "$@" nogui
+"/Applications/VMware Fusion.app/Contents/Library/vmrun" -T fusion list
+
+nmap -v -sn 172.16.110.1/24

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [[ $# != 1 ]]; then
+    echo "usage: [vmx path]"
+    exit 1
+fi
+
+"/Applications/VMware Fusion.app/Contents/Library/vmrun" -T fusion stop $1
+"/Applications/VMware Fusion.app/Contents/Library/vmrun" -T fusion list
+
