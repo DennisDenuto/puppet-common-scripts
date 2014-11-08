@@ -67,6 +67,10 @@ file { "/Users/$username/.oh-my-zsh/custom/plugins":
     source  => "vim-scripts/JavaDecompiler.vim",
   }
 
+  repository { "/Users/${::boxen_user}/.vim/bundle/nerdtree":
+    source  => "scrooloose/nerdtree",
+  }
+
   file { "${vimrc}": 
      ensure  => present,
      source  => "puppet:///modules/common-scripts/vim/.vimrc",
