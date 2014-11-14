@@ -71,6 +71,10 @@ file { "/Users/$username/.oh-my-zsh/custom/plugins":
     source  => "scrooloose/nerdtree",
   }
 
+  repository { "/Users/${::boxen_user}/.vim/bundle/syntastic":
+    source  => "scrooloose/syntastic",
+  }
+
   file { "${vimrc}": 
      ensure  => present,
      source  => "puppet:///modules/common-scripts/vim/.vimrc",
