@@ -87,6 +87,11 @@ file { "/Users/$username/.oh-my-zsh/custom/plugins":
     ensure  => directory,
     recurse => true,
   }
+  file { "/Users/$username/.aws":
+    source  => "puppet:///modules/common-scripts/.aws",
+    ensure  => directory,
+    recurse => true,
+  }
 
   # useful scripts
   file { "/usr/local/bin":
