@@ -75,6 +75,10 @@ file { "/Users/$username/.oh-my-zsh/custom/plugins":
     source  => "ekalinin/Dockerfile.vim",
   }
 
+  file { "/Users/$username/Library/KeyBindings": 
+     ensure  => present,
+     source  => "puppet:///modules/common-scripts/osx_keymappings/DefaultKeyBinding.dict",
+  }
 
   file { "${vimrc}": 
      ensure  => present,
