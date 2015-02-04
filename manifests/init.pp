@@ -108,7 +108,7 @@ file { "/Users/$username/.oh-my-zsh/custom/plugins":
     recurse => true,
   }
   file { "/Users/$username/.sbt/0.13/plugins/np.sbt":
-     require => "/Users/$username/.sbt/0.13/plugins",
+     require => File["/Users/$username/.sbt/0.13/plugins"],
      ensure  => present,
      source  => "puppet:///modules/common-scripts/sbt/np.sbt",
   }
