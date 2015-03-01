@@ -51,6 +51,10 @@ file { "/Users/$username/.oh-my-zsh/custom/plugins":
     source  => "rodjek/vim-puppet",
   }
 
+  repository { "/Users/${::boxen_user}/.vim/bundle/vim-rspec":
+    source  => "thoughtbot/vim-rspec",
+  }
+
   repository { "/Users/${::boxen_user}/.vim/bundle/vim-json":
     source  => "elzr/vim-json",
   }
