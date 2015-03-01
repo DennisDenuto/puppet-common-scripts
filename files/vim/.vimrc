@@ -126,3 +126,10 @@ map <C-n> :NERDTreeToggle<CR>
 " XPTemplate settings
 "-----------------------------------------------------------------------------
 let g:xptemplate_brace_complete = ''
+
+"-----------------------------------------------------------------------------
+" rspec Settings
+"-----------------------------------------------------------------------------
+let g:rspec_command = "!bundle exec rspec --drb {spec}"
+map <Leader>r :call RunCurrentSpecFile()<CR>
+let g:rspec_runner = "os_x_iterm"
