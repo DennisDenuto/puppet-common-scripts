@@ -39,7 +39,7 @@ class common-scripts($username="") {
 
   exec { "install_vundles":
     command => "vim +PluginInstall +qall",
-    path    => "/opt/boxen/homebrew/bin/:/usr/local/bin/:/bin/",
+    path    => "/opt/boxen/homebrew/bin/:/usr/local/bin/:/bin/:/usr/bin/",
     logoutput => true,
     require => File["${vimrc}"],
   }
