@@ -1,6 +1,30 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'kien/ctrlp.vim'
+Plugin 'vim-scripts/JavaDecompiler.vim'
+Plugin 'elzr/vim-json'
+Plugin 'rodjek/vim-puppet'
+Plugin 'thoughtbot/vim-rspec'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'othree/xml.vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+
 syntax on
-filetype plugin indent on
-execute pathogen#infect()
 let g:solarized_termtrans = 1
 let g:solarized_termcolors=256
 colorscheme solarized
@@ -25,7 +49,6 @@ set cindent
 set ignorecase
 set smartcase
 set nowrap
-set paste
 
 
 " Shows a line indicating mode (ie, the -- INSERT -- at the bottom )
@@ -133,3 +156,14 @@ let g:xptemplate_brace_complete = ''
 let g:rspec_command = "!bundle exec rspec --drb {spec}"
 map <Leader>r :call RunCurrentSpecFile()<CR>
 let g:rspec_runner = "os_x_iterm"
+"
+"""""""""""""""""""""""
+"  ultisnip Settings  "
+"""""""""""""""""""""""
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+set nopaste
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
