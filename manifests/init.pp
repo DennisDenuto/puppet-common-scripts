@@ -1,7 +1,6 @@
 # This is a placeholder class.
 #class bash_config_scripts($username) {
 class common-scripts($username="") {
-
   file { "/Users/$username/config":
     source  => "puppet:///modules/common-scripts/config",
     recurse => true,
@@ -36,6 +35,13 @@ class common-scripts($username="") {
   file { "${vimrc}": 
      ensure  => present,
      source  => "puppet:///modules/common-scripts/vim/.vimrc",
+  }
+
+  exec { "install_vundles":
+    command => "vim +PluginInstall +qall",
+    path    => "/opt/boxen/homebrew/bin/:/usr/local/bin/:/bin/",
+    logoutput => true,
+    require => File["${vimrc}"],
   }
 
   # aws cli
