@@ -46,7 +46,7 @@ class common-scripts($username="") {
     command => "vim +PluginInstall +qall",
     path    => "/opt/boxen/homebrew/bin/:/usr/local/bin/:/bin/:/usr/bin/",
     logoutput => true,
-    require => File["${vimrc}"],
+    require => Repository["${vimdir}/bundle/Vundle.vim"],
   }
 
   # aws cli
