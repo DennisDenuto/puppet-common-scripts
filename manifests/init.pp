@@ -27,6 +27,11 @@ class common-scripts($username="") {
     recurse => true,
   }
 
+  repository { "${vimdir}/bundle/Vundle.vim":
+    source => 'gmarik/Vundle.vim',
+    require => File["${vimdir}"],
+  }
+
   file { "/Users/$username/Library/KeyBindings":
      ensure  => present,
      source  => "puppet:///modules/common-scripts/osx_keymappings/DefaultKeyBinding.dict",
