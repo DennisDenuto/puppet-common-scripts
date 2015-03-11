@@ -12,8 +12,8 @@
 [alias]
 	ci = commit
 	st = status
-	lg-local-commits = log --graph --decorate --pretty=oneline --abbrev-commit --all origin/master..HEAD
-	lg = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    lg-local-commits = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit  origin/master..HEAD
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	g = grep --break --heading --line-number
 [grep]
 	extendRegexp = true
