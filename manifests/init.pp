@@ -32,12 +32,12 @@ class common-scripts($username="") {
     require => File["${vimdir}"],
   }
 
-  file { "/Users/$username/Library/KeyBindings":
+  file { "/Users/$username/Library/KeyBindings/DefaultKeyBinding.dict":
      ensure  => present,
      source  => "puppet:///modules/common-scripts/osx_keymappings/DefaultKeyBinding.dict",
   }
 
-  file { "/Users/$username/Library/Keyboard\ Layouts":
+  file { "/Users/$username/Library/Keyboard Layouts/intellij.keylayout":
      ensure  => present,
      source  => "puppet:///modules/common-scripts/osx_keylayouts/intellij.keylayout",
   }
