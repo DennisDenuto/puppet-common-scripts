@@ -37,6 +37,11 @@ class common-scripts($username="") {
      source  => "puppet:///modules/common-scripts/osx_keymappings/DefaultKeyBinding.dict",
   }
 
+  file { "/Users/$username/Library/Keyboard\ Layouts":
+     ensure  => present,
+     source  => "puppet:///modules/common-scripts/osx_keylayouts/intellij.keylayout",
+  }
+
   file { "${vimrc}": 
      ensure  => present,
      source  => "puppet:///modules/common-scripts/vim/.vimrc",
