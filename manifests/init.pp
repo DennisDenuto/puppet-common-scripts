@@ -1,6 +1,8 @@
 # This is a placeholder class.
 #class bash_config_scripts($username) {
 class commonscripts($username="") {
+  include go
+
   file { "/Users/$username/config":
     source  => "puppet:///modules/commonscripts/config",
     recurse => true,
