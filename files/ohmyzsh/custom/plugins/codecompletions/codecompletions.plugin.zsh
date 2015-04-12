@@ -22,7 +22,7 @@ compdef _p p
 idea () {
         local project_looking_for project_found
         project_looking_for=$1
-        idea_version=14
+        idea_version=15
         if [[ -e `pwd`/$project_looking_for ]]
         then
                 open -a IntelliJ\ IDEA\ $idea_version -e `pwd`/$project_looking_for
