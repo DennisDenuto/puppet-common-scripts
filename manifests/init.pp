@@ -2,6 +2,7 @@
 #class bash_config_scripts($username) {
 class commonscripts($username="") {
   include go
+  include sshpass
 
   file { "/Users/$username/config":
     source  => "puppet:///modules/commonscripts/config",
