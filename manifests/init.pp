@@ -4,6 +4,7 @@ class commonscripts($username="") {
   include go
   include sshpass
   include oracle
+  include youcompleteme
 
   file { "/Users/$username/config":
     source  => "puppet:///modules/commonscripts/config",

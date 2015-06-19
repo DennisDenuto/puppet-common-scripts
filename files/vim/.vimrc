@@ -17,6 +17,8 @@ Plugin 'derekwyatt/vim-scala'
 Plugin 'othree/xml.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'ervandew/supertab'
 
 
 " All of your Plugins must be added before the following line
@@ -156,7 +158,14 @@ let g:xptemplate_brace_complete = ''
 let g:rspec_command = "!bundle exec rspec --drb {spec}"
 map <Leader>r :call RunCurrentSpecFile()<CR>
 let g:rspec_runner = "os_x_iterm"
+"""""""""""""""""""""""
+"  Make youcompleteme compatible with UltiSniper (using supertab)  "
+"""""""""""""""""""""""
 "
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
 """""""""""""""""""""""
 "  ultisnip Settings  "
 """""""""""""""""""""""
