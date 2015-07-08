@@ -19,6 +19,8 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'ervandew/supertab'
+Plugin 'fatih/vim-go'
+
 
 
 " All of your Plugins must be added before the following line
@@ -52,6 +54,11 @@ set ignorecase
 set smartcase
 set nowrap
 
+" Linux Kernel settings:
+set tabstop=8
+set softtabstop=8
+set shiftwidth=8
+set noexpandtab
 
 " Shows a line indicating mode (ie, the -- INSERT -- at the bottom )
 set showmode
