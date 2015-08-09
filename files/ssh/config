@@ -1,0 +1,11 @@
+Host github.com
+	HostName github.com
+	PubkeyAuthentication yes
+	IdentityFile ~/.ssh/id_rsa.pub
+Host bitbucket.org
+	HostName bitbucket.org
+	PubkeyAuthentication yes
+	IdentityFile ~/.ssh/id_rsa.pub
+Host *
+	PubkeyAuthentication no
+	IdentitiesOnly yes

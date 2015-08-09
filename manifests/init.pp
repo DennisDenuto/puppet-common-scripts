@@ -13,6 +13,9 @@ class commonscripts($username="") {
   file { "/Users/$username/.gitconfig":
     source  => "puppet:///modules/commonscripts/git/.gitconfig",
   }
+  file { "/Users/$username/.ssh/config":
+    source  => "puppet:///modules/commonscripts/ssh/config",
+  }
   file { "/Users/$username/Library/Preferences/net.limechat.LimeChat.plist":
     source  => "puppet:///modules/commonscripts/limechat/net.limechat.LimeChat.plist",
   }
