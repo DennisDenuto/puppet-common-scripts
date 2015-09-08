@@ -1,0 +1,69 @@
+<keymap version="1" name="tyro" parent="$default">
+  <action id="ActivateMavenProjectsToolWindow">
+    <keyboard-shortcut first-keystroke="alt M" />
+  </action>
+  <action id="ActivateVersionControlToolWindow">
+    <keyboard-shortcut first-keystroke="alt V" />
+  </action>
+  <action id="CloseAllEditors">
+    <keyboard-shortcut first-keystroke="WINDOWS" second-keystroke="A" />
+    <keyboard-shortcut first-keystroke="meta A" />
+  </action>
+  <action id="CloseAllEditorsButActive">
+    <keyboard-shortcut first-keystroke="WINDOWS" second-keystroke="O" />
+    <keyboard-shortcut first-keystroke="meta O" />
+  </action>
+  <action id="CloseAllUnmodifiedEditors">
+    <keyboard-shortcut first-keystroke="WINDOWS" second-keystroke="U" />
+    <keyboard-shortcut first-keystroke="meta U" />
+  </action>
+  <action id="CloseAllUnpinnedEditors">
+    <keyboard-shortcut first-keystroke="WINDOWS" second-keystroke="P" />
+    <keyboard-shortcut first-keystroke="meta P" />
+  </action>
+  <action id="CloseContent">
+    <keyboard-shortcut first-keystroke="control F4" />
+    <keyboard-shortcut first-keystroke="WINDOWS" second-keystroke="C" />
+    <keyboard-shortcut first-keystroke="meta C" />
+  </action>
+  <action id="CloseProject">
+    <keyboard-shortcut first-keystroke="alt F" second-keystroke="J" />
+  </action>
+  <action id="EditorToggleColumnMode">
+    <keyboard-shortcut first-keystroke="shift alt BACK_SLASH" />
+    <keyboard-shortcut first-keystroke="shift control BACK_SLASH" />
+  </action>
+  <action id="Generate">
+    <keyboard-shortcut first-keystroke="alt BACK_SLASH" />
+  </action>
+  <action id="Images.EditExternaly" />
+  <action id="Images.Thumbnails.Hide">
+    <keyboard-shortcut first-keystroke="control F4" />
+    <keyboard-shortcut first-keystroke="WINDOWS" second-keystroke="C" />
+  </action>
+  <action id="NewElement">
+    <keyboard-shortcut first-keystroke="meta N" />
+  </action>
+  <action id="NewScratchFile">
+    <keyboard-shortcut first-keystroke="shift meta N" />
+  </action>
+  <action id="ShowUsages">
+    <keyboard-shortcut first-keystroke="control alt F7" />
+    <keyboard-shortcut first-keystroke="shift control G" />
+  </action>
+  <action id="SwitchApply">
+    <keyboard-shortcut first-keystroke="control alt ENTER" />
+  </action>
+  <action id="SwitchDown">
+    <keyboard-shortcut first-keystroke="control alt DOWN" />
+  </action>
+  <action id="SwitchLeft">
+    <keyboard-shortcut first-keystroke="control alt LEFT" />
+  </action>
+  <action id="SwitchRight">
+    <keyboard-shortcut first-keystroke="control alt RIGHT" />
+  </action>
+  <action id="SwitchUp">
+    <keyboard-shortcut first-keystroke="control alt UP" />
+  </action>
+</keymap>

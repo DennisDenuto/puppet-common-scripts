@@ -50,6 +50,11 @@ class commonscripts($username="") {
      source  => "puppet:///modules/commonscripts/osx_keylayouts/intellij.keylayout",
   }
 
+  file { "/Users/$username/Library/Preferences/IntelliJIdea14/keymaps/dennis.xml":
+     ensure  => present,
+     source  => "puppet:///modules/commonscripts/intellij/dennis.xml",
+  }
+
   file { "${vimrc}": 
      ensure  => present,
      source  => "puppet:///modules/commonscripts/vim/.vimrc",
