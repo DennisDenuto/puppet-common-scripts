@@ -2,7 +2,7 @@ class commonscripts::go {
 
   file_line { 'GOROOT':
     path => '/etc/zshenv',
-    line => "export GOROOT=/opt/boxen/homebrew/Cellar/go/1.4.2/libexec",
+    line => "export GOROOT=/opt/boxen/homebrew/Cellar/go/1.6rc2/libexec",
   }
 
   file_line { 'GOPATH':
