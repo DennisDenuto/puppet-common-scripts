@@ -5,6 +5,8 @@ export PATH=$PATH:$MY_PROJECTS_HOME
 
 # add aws-cli to path
 export PATH=$PATH:~/.ec2_cli/eb/macosx/python3/:~/.ec2_cli/api/bin/
+# add GOPATH to PATH
+export PATH=$PATH:~/.go/bin
 
 # sourcing config
 source ~/config/.aliases
