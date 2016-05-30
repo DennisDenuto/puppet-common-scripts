@@ -20,6 +20,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'ervandew/supertab'
 Plugin 'fatih/vim-go'
+Plugin 'majutsushi/tagbar'
 
 
 
